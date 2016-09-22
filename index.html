@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="nav-styles.css">
+ 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <style>
@@ -16,6 +16,8 @@
       font: 400 15px Lato, sans-serif;
       line-height: 1.8em;
       color: #818181;
+      margin: auto;
+      max-width: 1500px;
   }
   h2 {
       font-size: 24px;
@@ -47,6 +49,13 @@
     transition-duration: 0.4s;
 }
 
+#about {
+    border: dotted;
+    border-width: 1px;
+    border-color: black;
+    border-top: none;
+}
+
 .button1 {
     background-color: #007ea7;
 }
@@ -62,14 +71,38 @@
 }
   .jumbotron {
       color: #fff;
-      padding: 95px 50px;
+      padding: 95px;
       font-family: Montserrat, sans-serif;
+      background-image: url(jayden2.jpg);
+      background-size: cover, 100%;
+      background-repeat: no-repeat;
+      margin-bottom: -5px;
+      border: dotted;
+      border-width: 1px;
+      border-color: black;
+      border-top: none;
+      border-bottom: none;
   }
   .container-fluid {
       padding: 50px 40px;
+      border: dotted;
+      border-width: 1px;
+      border-color: black;
+      border-top: none;
+      border-bottom: none;
   }
+
+  #googleMap {
+      height:400px;width:100%;
+      border: dotted;
+      border-width: 1px;
+      border-color: black;
+      border-top: none;
+      border-bottom: none;
+  }
+
   .bg-grey {
-      background-color: #f6f6f6;
+      background-color: #F7F9F9;
   }
   .logo-small {
       color: #db481b;
@@ -181,6 +214,7 @@
       margin-bottom: 20px;
       color: #f4511e;
   }
+
   .slideanim {visibility:hidden;}
   .slide {
       animation-name: slide;
@@ -226,8 +260,7 @@
   }
   </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
+<body class="bg-grey" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#2597c5; color:#fff;">
   <div class="container">
     <div class="navbar-header">
@@ -248,7 +281,7 @@
     </div>
   </div>
 </nav>
-<div class="jumbotron text-center" style="margin-bottom: -5px; background:url(jayden2.jpg);">
+<div class="jumbotron text-center img-responsive" style="max-width: 1500px; margin:auto;">
   
   <h1 style="line-height: 1.1em; font-size:59px; margin-bottom: 5px; margin-top:45px;">Book Bambini</h1> 
   <p style="line-height: 1.4em; font-size:25px; margin-bottom:45px;">Childcare On-Demand</p> 
@@ -258,7 +291,7 @@
 </div>
 
 <!-- Container (About Section) -->
-<div id="about" class="container-fluid bg-grey" style="margin-bottom: 0px;">
+<div id="about" class="container-fluid bg-grey">
   <div class="row" style="margin-left:5px;">
     <div class="col-sm-8">
       <h2 style="margin-top: 0px; font-size:27px;">Our Values</h2>
@@ -290,7 +323,7 @@
           <p style="font-size:16px;"> 2 Children - $22/hr</p>
           <p style="font-size:16px;"> 3 Children - $25/hr</p>
           <p style="font-size:16px;"> 4 Children - $28/hr</p>
-          <p style="margin-bottom:10px">Add $3/hour for sick children</p>
+          <p style="margin-bottom:10px">* Add $3/hour for sick children*</p>
         </div>
         <div class="panel-footer">
           <h3 style="font-size:27px;">$20</h3>
@@ -408,7 +441,7 @@
   </div>
 </div>
 
-<div id="googleMap" style="height:400px;width:100%;"></div>
+<div id="googleMap"></div>
 
 <!-- Add Google Maps -->
 <script src="http://maps.googleapis.com/maps/api/js"></script>
