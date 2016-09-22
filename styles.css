@@ -1,7 +1,9 @@
-  body {
+body {
       font: 400 15px Lato, sans-serif;
       line-height: 1.8em;
       color: #818181;
+      margin: auto;
+      max-width: 1500px;
   }
   h2 {
       font-size: 24px;
@@ -33,6 +35,13 @@
     transition-duration: 0.4s;
 }
 
+#about {
+    border: dotted;
+    border-width: 1px;
+    border-color: black;
+    border-top: none;
+}
+
 .button1 {
     background-color: #007ea7;
 }
@@ -48,14 +57,38 @@
 }
   .jumbotron {
       color: #fff;
-      padding: 95px 50px;
+      padding: 95px;
       font-family: Montserrat, sans-serif;
+      background-image: url(jayden2.jpg);
+      background-size: cover, 100%;
+      background-repeat: no-repeat;
+      margin-bottom: -5px;
+      border: dotted;
+      border-width: 1px;
+      border-color: black;
+      border-top: none;
+      border-bottom: none;
   }
   .container-fluid {
       padding: 50px 40px;
+      border: dotted;
+      border-width: 1px;
+      border-color: black;
+      border-top: none;
+      border-bottom: none;
   }
+
+  #googleMap {
+      height:400px;width:100%;
+      border: dotted;
+      border-width: 1px;
+      border-color: black;
+      border-top: none;
+      border-bottom: none;
+  }
+
   .bg-grey {
-      background-color: #f6f6f6;
+      background-color: #F7F9F9;
   }
   .logo-small {
       color: #db481b;
@@ -167,6 +200,7 @@
       margin-bottom: 20px;
       color: #f4511e;
   }
+
   .slideanim {visibility:hidden;}
   .slide {
       animation-name: slide;
